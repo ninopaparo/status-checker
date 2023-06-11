@@ -1,0 +1,18 @@
+[
+  {
+    "id": 546,
+    "date_created": "2018-09-07T14:35:00-07:00",
+    "date_updated": "2018-09-07T18:34:15-07:00",
+    "title": "Slack’s forwarding email feature is failing for some customers",
+    "type": "incident",
+    "status": "active",
+    "url": "https://status.slack.com/2018-09/7dea1cd14cd0f657",
+    "services": ["Apps/Integrations/APIs"],
+    "notes": [
+      {
+        "date_created": "2018-09-07T18:34:15-07:00",
+        "body": "Technical Summary:\r\nOn September 7th at 2:35pm PT, we received reports that emails were failing to deliver to Slack forwarding addresses. We identified that this was the result of an expired certificate used to verify requests sent from our email provider. At 4:55pm PT, we deployed an update that corrected this and fixed the problem. Unfortunately any email sent to a forwarding address during this time is not retrievable and will need to be re-sent."
+      }
+    ]
+  }
+]
